@@ -1,7 +1,6 @@
 import { View } from 'react-native';
 import * as DocumentPicker from 'expo-document-picker';
 import { useState } from 'react';
-import Pdf from 'react-native-pdf';
 import PrimaryButton from '../components/PrimaryButton';
 import AppText from '../components/AppText';
 import { saveCertificate } from '../utils/storage';
@@ -30,10 +29,9 @@ export default function CertificateViewerScreen() {
           <PrimaryButton title="Upload Certificate" onPress={pickCertificate} />
         </>
       ) : (
-        <Pdf
-          source={{ uri: pdfUri }}
-          style={{ flex: 1 }}
-        />
+        <AppText>
+          Certificate saved successfully
+        </AppText>
       )}
     </View>
   );
