@@ -9,6 +9,7 @@ import LoginScreen from '../screens/LoginScreen';
 import DashboardScreen from '../screens/DashboardScreen';
 import CertificateWalletScreen from '../screens/CertificateWalletScreen';
 import CertificateViewerScreen from '../screens/CertificateViewerScreen';
+import QRVerificationScreen from '../screens/QRVerificationScreen';
 import SettingsScreen from '../screens/SettingsScreen';
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -21,6 +22,7 @@ export default function AppNavigator() {
         <Stack.Screen name="Dashboard" component={DashboardScreen} />
         <Stack.Screen name="Wallet" component={CertificateWalletScreen} />
         <Stack.Screen name="CertificateViewer" component={CertificateViewerScreen} />
+        <Stack.Screen name="QRVerification" component={QRVerificationScreen} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
       </Stack.Navigator>
     </NavigationContainer>

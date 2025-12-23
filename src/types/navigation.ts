@@ -3,6 +3,7 @@ export type RootStackParamList = {
   Dashboard: undefined;
   Wallet: undefined;
   CertificateViewer: { certificateId: string };
+  QRVerification: undefined;
   Settings: undefined;
 };
 
