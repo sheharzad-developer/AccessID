@@ -1,23 +1,14 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View } from 'react-native';
+import CertificateCard from '../components/CertificateCard';
+import { mockCertificate } from '../data/mockCertificate';
 
-export default function CertificateWalletScreen() {
+export default function CertificateWalletScreen({ navigation }: any) {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Certificate Wallet Screen</Text>
+    <View style={{ padding: 20 }}>
+      <CertificateCard
+        certificate={mockCertificate}
+        onView={() => navigation.navigate('CertificateViewer')}
+      />
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-});
-

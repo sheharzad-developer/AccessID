@@ -1,7 +1,7 @@
 export type RootStackParamList = {
   Login: undefined;
   Dashboard: undefined;
-  CertificateWallet: undefined;
+  Wallet: undefined;
   CertificateViewer: { certificateId: string };
   Settings: undefined;
 };

@@ -1,23 +1,16 @@
-import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View } from 'react-native';
+import AppText from '../components/AppText';
 
 export default function CertificateViewerScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Certificate Viewer Screen</Text>
+    <View style={{ padding: 20 }}>
+      <AppText style={{ fontSize: 22, fontWeight: '700' }}>
+        Certificate Viewer
+      </AppText>
+
+      <AppText>
+        PDF / Image certificate will be shown here
+      </AppText>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-  },
-});
-
